@@ -16,7 +16,7 @@
 
     <!-- Search -->
     <div class="search-box mb-8">
-      <input type="search" placeholder="Search games..." class="search-input">
+      <input type="search" placeholder="Search games..." class="search-input" id="searchInput">
       <span class="icon-search">&#128269;</span>
     </div>
 
@@ -25,17 +25,16 @@
       <h2 class="section-title">Featured Game</h2>
       <div class="card featured-card">
         <div class="card-header">
-          <h3 class="card-title">Tetris</h3>
-          <p class="card-description">The classic puzzle game</p>
+          <h3 class="card-title" id="featuredTitle">Tetris</h3>
+          <p class="card-description" id="featuredDescription">The classic puzzle game, Released: 1984</p>
         </div>
         <div class="card-content">
           <div class="game-preview">
-            <!-- Gamepad icon -->
             <span class="icon-gamepad">&#128377;</span>
           </div>
         </div>
         <div class="card-footer">
-          <button class="play-button">Play Now</button>
+          <button class="play-button" onclick="playGame('Tetris')">Play Now</button>
         </div>
       </div>
     </section>
@@ -43,22 +42,8 @@
     <!-- All Games -->
     <section class="all-games">
       <h2 class="section-title">All Games</h2>
-      <div class="games-grid">
-        <div class="card">
-          <div class="card-header">
-            <h3 class="card-title">Pong</h3>
-            <p class="card-description">Released: 1972</p>
-          </div>
-          <div class="card-content">
-            <div class="game-preview">
-              <span class="icon-gamepad">&#128377;</span>
-            </div>
-          </div>
-          <div class="card-footer">
-            <button class="play-button">Play</button>
-          </div>
-        </div>
-        <!-- Repeat the card for other games as needed -->
+      <div class="games-grid" id="gamesGrid">
+        <!-- Games will be dynamically populated here -->
       </div>
     </section>
   </div>
@@ -67,5 +52,10 @@
   <footer class="footer">
     <p>&copy; 2024 Retro Arcade. All rights reserved.</p>
   </footer>
+
+  <script src="js/loadGames.js"></script>
+  <script src="js/playGame.js"></script>
+  <script src="js/searchGames.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
