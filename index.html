@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retro Arcade</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gradient min-h-screen text-white">
+  <div class="container mx-auto px-4 py-8">
+    <!-- Header -->
+    <header class="text-center mb-12">
+      <h1 class="title">Retro Arcade</h1>
+      <p class="subtitle">Play your favorite classic games online!</p>
+    </header>
+
+    <!-- Search -->
+    <div class="search-box mb-8">
+      <input type="search" placeholder="Search games..." class="search-input">
+      <span class="icon-search">&#128269;</span>
+    </div>
+
+    <!-- Featured Game -->
+    <section class="featured-game mb-12">
+      <h2 class="section-title">Featured Game</h2>
+      <div class="card featured-card">
+        <div class="card-header">
+          <h3 class="card-title">Tetris</h3>
+          <p class="card-description">The classic puzzle game</p>
+        </div>
+        <div class="card-content">
+          <div class="game-preview">
+            <!-- Gamepad icon -->
+            <span class="icon-gamepad">&#128377;</span>
+          </div>
+        </div>
+        <div class="card-footer">
+          <button class="play-button">Play Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- All Games -->
+    <section class="all-games">
+      <h2 class="section-title">All Games</h2>
+      <div class="games-grid">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Pong</h3>
+            <p class="card-description">Released: 1972</p>
+          </div>
+          <div class="card-content">
+            <div class="game-preview">
+              <span class="icon-gamepad">&#128377;</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <button class="play-button">Play</button>
+          </div>
+        </div>
+        <!-- Repeat the card for other games as needed -->
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Retro Arcade. All rights reserved.</p>
+  </footer>
+</body>
+</html>

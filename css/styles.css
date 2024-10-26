@@ -1,0 +1,125 @@
+/* Basic Reset and Layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #4c1d95, #312e81);
+    color: #ffffff;
+    min-height: 100vh;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 16px;
+  }
+  
+  /* Header */
+  .title {
+    font-size: 4rem;
+    color: #fbbf24;
+    text-shadow: 2px 2px #1e293b;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    color: #c4b5fd;
+  }
+  
+  /* Search Box */
+  .search-box {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #4c1d95;
+    color: #ffffff;
+    border: 2px solid #6d28d9;
+  }
+  
+  .icon-search {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #c4b5fd;
+  }
+  
+  /* Featured Game Card */
+  .featured-game .section-title,
+  .all-games .section-title {
+    font-size: 2rem;
+    color: #c4b5fd;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card {
+    background: linear-gradient(to right, #1e40af, #4c1d95);
+    border: 2px solid #3b82f6;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .card-header .card-title {
+    font-size: 1.25rem;
+    color: #fbbf24;
+  }
+  
+  .card-header .card-description {
+    color: #c4b5fd;
+  }
+  
+  .card-content .game-preview {
+    background-color: #000000;
+    border-radius: 8px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+  
+  .icon-gamepad {
+    font-size: 3rem;
+    color: #c4b5fd;
+  }
+  
+  /* Button Styles */
+  .play-button {
+    width: 100%;
+    background-color: #fbbf24;
+    color: #000000;
+    padding: 0.75rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .play-button:hover {
+    background-color: #facc15;
+  }
+  
+  /* All Games Grid */
+  .games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #312e81;
+    color: #a78bfa;
+    margin-top: 2rem;
+  }
+  
