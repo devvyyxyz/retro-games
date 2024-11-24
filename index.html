@@ -20,13 +20,18 @@
       <span class="icon-search">&#128269;</span>
     </div>
 
+    <!-- Pong Game Container -->
+    <div id="pongGameContainer" class="game-container hidden">
+      <canvas id="pongCanvas" width="600" height="400"></canvas>
+    </div>
+    
     <!-- Featured Game -->
     <section class="featured-game mb-12">
       <h2 class="section-title">Featured Game</h2>
       <div class="card featured-card">
         <div class="card-header">
-          <h3 class="card-title" id="featuredTitle">Tetris</h3>
-          <p class="card-description" id="featuredDescription">The classic puzzle game, Released: 1984</p>
+          <h3 class="card-title" id="featuredTitle">Pong</h3>
+          <p class="card-description" id="featuredDescription">The classic paddle game, Released: 1972</p>
         </div>
         <div class="card-content">
           <div class="game-preview">
@@ -34,7 +39,7 @@
           </div>
         </div>
         <div class="card-footer">
-          <button class="play-button" onclick="playGame('Tetris')">Play Now</button>
+          <button class="play-button" onclick="playGame('Pong')">Play Now</button>
         </div>
       </div>
     </section>
